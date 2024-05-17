@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <title>Movie Design</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="navbar-container">
+            <div class="logo-container"><h1 class="logo">WARNER BROS</h1></div>
+
+            <div class="menu-container">
+                <ul class="menu-list">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="movies.html">MOVIES</a></li>
+                    <li><a href="tv shows.html">TV SHOWS</a></li>
+                    <li><a href="apps&games.html">APPS&GAMES</a></li>
+                    <li><a href="collections.html">COLLECTIONS</a></li>
+                    <li><a href="feedback.html">FEEDBACK</a></li>
+                </ul>
+            </div>    
+            
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="content-container">
+
+            <div class="card">
+                <div class="cardcontent">
+                    
+                    <div class="text">
+                        <h3><a href="#" class="trailer-link">GODZILLA X KONG: THE NEW EMPIRE</a></h3>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="popup" id="videoPopup1">
+                <div class="popup-content">
+                    <span class="close" id="close">&times;</span>
+                    <iframe id="youtube-trailer" width="560" height="315" src="https://www.youtube.com/embed/c0AkaHWg2OI?si=F0UzZgviyBAVeA80" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        
+            <script>
+                const trailerLink = document.querySelector('.trailer-link');
+                const popup = document.getElementById('videoPopup1');
+                const close = document.getElementById('close');
+        
+                trailerLink.addEventListener('click', () => {
+                    popup.style.display = 'block';
+                });
+        
+                close.addEventListener('click', () => {
+                    popup.style.display = 'none';
+                });
+            </script>
+            
+            <div class="movie-list-container">
+                <h1 class="movie-list-title">ACTION</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/THE BEEKEEPER.png" alt="">
+                            <span class="movie-list-item-title">The Beekeeper</span>
+                            <div class="movie-list-item-button">
+                            <button><a href="https://www.youtube.com/embed/SzINZZ6iqxY?si=xAhVWGJPFDsJkaiU">WATCH</a></button>
+                            </div>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/THE MARVELS.png" alt="">
+                            <span class="movie-list-item-title">The Marvels</span> <div class="movie-list-item-button">
+                                <button><a href="https://www.youtube.com/embed/iuk77TjvfmE?si=N425WFYpjrExwhhd">WATCH</a></button>
+                                </div>
+                            </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/SQUID GAME.png" alt="">
+                            <span class="movie-list-item-title">Squid Game</span>
+                            <div class="movie-list-item-button">
+                                <button><a href="https://www.youtube.com/embed/oqxAJKy0ii4?si=LToYvx3dAcp2Toi8">WATCH</a></button>
+                                </div>
+                            </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/THE MOTHER.png" alt="">
+                            <span class="movie-list-item-title">The Mother</span>
+                            <div class="movie-list-item-button">
+                                <button><a href="https://www.youtube.com/embed/8BFdFeOS3oM?si=LmmDTINEhBCx-wej">WATCH</a></button>
+                                </div>
+                            
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/VENDETTA.png" alt="">
+                            <span class="movie-list-item-title">Vendetta</span>
+                            <div class="movie-list-item-button">
+                                <button><a href="https://www.youtube.com/embed/e0S34QUDp6k?si=AFX-8fSJn1u5jaIV">WATCH</a></button>
+                                </div>
+                            
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/SEE FOR ME.png" alt="">
+                            <span class="movie-list-item-title">See For Me</span>
+                            <div class="movie-list-item-button">
+                                <button><a href="https://www.youtube.com/embed/m_0cXd0bEYQ?si=SE-QaTUTNGj4eUCe">WATCH</a></button>
+                                </div>
+                            
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/ANTHRACITE.png" alt="">
+                            <span class="movie-list-item-title">Anthracite</span>
+                            <div class="movie-list-item-button">
+                                <button><a href="https://www.youtube.com/embed/KrHr696s8Og?si=Mtvm_IW7TXaGqeO-">WATCH</a></button>
+                                </div>
+                            
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right arrow"></i>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="cardcontent">
+                    
+                    <div class="text">
+                        <h3><a href="#" class="trailer-link">MOANA</a></h3>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="popup" id="videoPopup1">
+                <div class="popup-content">
+                    <span class="close" id="close">&times;</span>
+                    <iframe id="youtube-trailer" width="560" height="315" src="https://www.youtube.com/embed/LKFuXETZUsI?si=dEQp8BWbRPqmAXyk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        
+            <script>
+                const trailerLink = document.querySelector('.trailer-link');
+                const popup = document.getElementById('videoPopup1');
+                const close = document.getElementById('close');
+        
+                trailerLink.addEventListener('click', () => {
+                    popup.style.display = 'block';
+                });
+        
+                close.addEventListener('click', () => {
+                    popup.style.display = 'none';
+                });
+            </script>
+
+            <div class="movie-list-container">
+                <h1 class="movie-list-title">ANIMATION</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/ZOOTOPIA.png" alt="">
+                            <span class="movie-list-item-title">Zootopia</span>
+                            <div class="movie-list-item-button">
+                                <button><a href="https://www.youtube.com/embed/jWM0ct-OLsM?si=vcm6RC0jeZqr6bm0">WATCH</a></button>
+                                </div>
+                            
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/SEA BEAST.png" alt="">
+                            <span class="movie-list-item-title">The Sea Beast</span>
+                            <div class="movie-list-item-button">
+                                <button><a href="https://www.youtube.com/embed/P-E-IGQCsPo?si=LA3-aKIBZzd7zi9Q">WATCH</a></button>
+                                </div>
+                           
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/SING.png" alt="">
+                            <span class="movie-list-item-title">Sing</span>
+                            <div class="movie-list-item-button">
+                                <button><a href="https://www.youtube.com/embed/EPZu5MA2uqI?si=mgufA9cFqD1jvvoG">WATCH</a></button>
+                                </div>
+                            
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/LUCA.png" alt="">
+                            <span class="movie-list-item-title">Luca</span>
+                            <div class="movie-list-item-button">
+                                <button><a href="https://www.youtube.com/embed/mYfJxlgR2jw?si=DRBlVXEpSCZPpmMJ">WATCH</a></button>
+                                </div>
+                            
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/NIMONA.png" alt="">
+                            <span class="movie-list-item-title">Nimona</span>
+                            <div class="movie-list-item-button">
+                                <button><a href="https://www.youtube.com/embed/rblA5nul1Mg?si=IDd3LmriDggBLlyJ">WATCH</a></button>
+                                </div>
+                            
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/SHREK.png" alt="">
+                            <span class="movie-list-item-title">Shrek</span>
+                            <div class="movie-list-item-button">
+                                <button><a href="https://www.youtube.com/embed/CwXOrWvPBPk?si=Ag6WRSzFv4rLT4yn">WATCH</a></button>
+                                </div>
+                            
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/SPIDERMAN.png" alt="">
+                            <span class="movie-list-item-title">Spiderman</span>
+                            <div class="movie-list-item-button">
+                                <button><a href="https://www.youtube.com/embed/t06RUxPbp_c?si=d1xgHxxLMGksrS-N">WATCH</a></button>
+                                </div>
+                            
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right arrow"></i>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="cardcontent">
+                    
+                    <div class="text">
+                        <h3><a href="#" class="trailer-link">THE EVIL DEAD RISE</a></h3>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="popup" id="videoPopup1">
+                <div class="popup-content">
+                    <span class="close" id="close">&times;</span>
+                    <iframe id="youtube-trailer" width="560" height="315" src="https://www.youtube.com/embed/smTK_AeAPHs?si=gcsr828lIkMH20JW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        
+            <script>
+                const trailerLink = document.querySelector('.trailer-link');
+                const popup = document.getElementById('videoPopup1');
+                const close = document.getElementById('close');
+        
+                trailerLink.addEventListener('click', () => {
+                    popup.style.display = 'block';
+                });
+        
+                close.addEventListener('click', () => {
+                    popup.style.display = 'none';
+                });
+            </script>
+
+            
+            <div class="movie-list-container">
+                <h1 class="movie-list-title">HORROR</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/WRONG TURN.png" alt="">
+                            <span class="movie-list-item-title">Wrong Turn</span>
+                            <div class="movie-list-item-button">
+                                <button><a href="https://www.youtube.com/embed/9lIUi6xWflg?si=_baiSkg9T-JJpoPv">WATCH</a></button>
+                                </div>
+                            
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/IN THE TALL GRASS.png" alt="">
+                            <span class="movie-list-item-title">In The Tall Grass</span>
+                            <div class="movie-list-item-button">
+                                <button><a href="https://www.youtube.com/embed/bBcvcSCZAW4?si=PDRszHQQaK2uU__E"">WATCH</a></button>
+                                </div>
+                            
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/JAWS.png" alt="">
+                            <span class="movie-list-item-title">Jaws</span>
+                            <div class="movie-list-item-button">
+                                <button><a href="https://www.youtube.com/embed/U1fu_sA7XhE?si=3b7lg9D5nwXHWnoS">WATCH</a></button>
+                                </div>
+                            
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/SCREAM.png" alt="">
+                            <span class="movie-list-item-title">Scream</span>
+                            <div class="movie-list-item-button">
+                                <button><a href="https://www.youtube.com/embed/beToTslH17s?si=XoM5Z1MnU5tHIWr7">WATCH</a></button>
+                                </div>
+                            
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/INSIDIOUS.png" alt="">
+                            <span class="movie-list-item-title">Insidious</span>
+                            <div class="movie-list-item-button">
+                                <button><a href="https://www.youtube.com/embed/ZuQuOnYnr3Q?si=tqU8Pwx8PYLc0x6u">WATCH</a></button>
+                                </div>
+                            
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/SEED OF CHUCKY.png" alt="">
+                            <span class="movie-list-item-title">Seed Of Chucky</span>
+                            <div class="movie-list-item-button">
+                                <button><a href="https://www.youtube.com/embed/CKc-mP5xXQY?si=IQgAvBcwVRlA1sxV">WATCH</a></button>
+                                </div>
+                           
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/ANNABELLE COMES HOME.png" alt="">
+                            <span class="movie-list-item-title">Annabelle</span>
+                            <div class="movie-list-item-button">
+                                <button><a href="https://www.youtube.com/embed/KisPhy7T__Q?si=0bCza-SWyPeynxqJ">WATCH</a></button>
+                                </div>
+                            
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right arrow"></i>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="cardcontent">
+                    
+                    <div class="text">
+                        <h3><a href="#" class="trailer-link">METEOR GARDEN</a></h3>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="popup" id="videoPopup1">
+                <div class="popup-content">
+                    <span class="close" id="close">&times;</span>
+                    <iframe id="youtube-trailer" width="560" height="315" src="https://www.youtube.com/embed/87Q8hTratnM?si=Xu8gTzpYnOCQmXZd" titnlRw1CGbFU0?si=UzehvdSi2GyRqvYKle="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        
+            <script>
+                const trailerLink = document.querySelector('.trailer-link');
+                const popup = document.getElementById('videoPopup1');
+                const close = document.getElementById('close');
+        
+                trailerLink.addEventListener('click', () => {
+                    popup.style.display = 'block';
+                });
+        
+                close.addEventListener('click', () => {
+                    popup.style.display = 'none';
+                });
+            </script>
+
+            <div class="movie-list-container">
+                <h1 class="movie-list-title">KDRAMA</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/ALCHEMY OF SOULS.png" alt="">
+                            <span class="movie-list-item-title">Alchemy Of Souls</span>
+                            <div class="movie-list-item-button">
+                                <button><a href="https://www.youtube.com/embed/nlRw1CGbFU0?si=7aYWlQrODgaUbxGk">WATCH</a></button>
+                                </div>
+                            
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/HOME TOWN CHA-CHA-CHA.png" alt="">
+                            <span class="movie-list-item-title">Home Town Cha-cha-cha</span>
+                            <div class="movie-list-item-button">
+                                <button><a href="https://www.youtube.com/embed/DsodZLGmpIQ?si=qteQmApnmRiXljCY">WATCH</a></button>
+                                </div>
+                            
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/BOYS OVER FLOWERS.png" alt="">
+                            <span class="movie-list-item-title">Boys Over Flowers</span>
+                            <div class="movie-list-item-button">
+                                <button><a href="https://www.youtube.com/embed/iuqwMI6dpJA?si=k0bROxjgHjARUe3c">WATCH</a></button>
+                                </div>
+                            
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/20TH CENTURY GIRL.png" alt="">
+                            <span class="movie-list-item-title">20th Century Girl</span>
+                            <div class="movie-list-item-button">
+                                <button><a href="https://www.youtube.com/embed/izClpEHwtB8?si=bGj0Aeg9sdGfvPg4">WATCH</a></button>
+                                </div>
+                            
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/BUSINESS PROPOSAL.png" alt="">
+                            <span class="movie-list-item-title">Business Proposal</span>
+                            <div class="movie-list-item-button">
+                                <button><a href="https://www.youtube.com/embed/mh4R-WXRhQo?si=lWYvRgz1t_nZLZqG">WATCH</a></button>
+                                </div>
+                            
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/MR QUEEN.png" alt="">
+                            <span class="movie-list-item-title">Mr Queen</span>
+                            <div class="movie-list-item-button">
+                                <button><a href="https://www.youtube.com/embed/2-Ikfk0hJbw?si=Hozq_RMdLqdemouR">WATCH</a></button>
+                                </div>
+                            
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/THE HEIRS.png" alt="">
+                            <span class="movie-list-item-title">The Heirs</span>
+                            <div class="movie-list-item-button">
+                                <button><a href="https://www.youtube.com/embed/Y0WSF5ikpvU?si=6kFVC5968rFLdL9m">WATCH</a></button>
+                                </div>
+                            
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right arrow"></i>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="cardcontent">
+                    
+                    <div class="text">
+                        <h3><a href="#" class="trailer-link">EVERYTHING EVERYTHING</a></h3>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="popup" id="videoPopup1">
+                <div class="popup-content">
+                    <span class="close" id="close">&times;</span>
+                    <iframe id="youtube-trailer" width="560" height="315" src="https://www.youtube.com/embed/mAC-nh9PU5s?si=hJBZReKFtxVluDYd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        
+            <script>
+                const trailerLink = document.querySelector('.trailer-link');
+                const popup = document.getElementById('videoPopup1');
+                const close = document.getElementById('close');
+        
+                trailerLink.addEventListener('click', () => {
+                    popup.style.display = 'block';
+                });
+        
+                close.addEventListener('click', () => {
+                    popup.style.display = 'none';
+                });
+            </script>
+            
+            <div class="movie-list-container">
+                <h1 class="movie-list-title">ROMANCE</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/THE SUMMER I TURNED PRETTY.png" alt="">
+                            <span class="movie-list-item-title">The Summer I Turned Pretty</span>
+                            <div class="movie-list-item-button">
+                                <button><a href="https://www.youtube.com/embed/AOPE3mvYjRk?si=3PWkITqzmQzTqhAx">WATCH</a></button>
+                                </div>
+                            
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/THE OTHER ZOEY.png" alt="">
+                            <span class="movie-list-item-title">The Other Zoey</span>
+                            <div class="movie-list-item-button">
+                                <button><a href="https://www.youtube.com/embed/iBbF1W3avMY?si=jM5CQtNmndzZQxTV">WATCH</a></button>
+                                </div>
+                            
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/XO KITTY.png" alt="">
+                            <span class="movie-list-item-title">XO Kitty</span>
+                            <div class="movie-list-item-button">
+                                <button><a href="https://www.youtube.com/embed/mw-HaoCQe9U?si=RUCqE8dn_MjAMvx_">WATCH</a></button>
+                                </div>
+                            
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/BLOOD AND WATER.png" alt="">
+                            <span class="movie-list-item-title">Blood And Water</span>
+                            <div class="movie-list-item-button">
+                                <button><a href="https://www.youtube.com/embed/2m0Cm2kMOBU?si=b4HOKeFEgEuA37sk">WATCH</a></button>
+                                </div>
+                            
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/MY FAULT.png" alt="">
+                            <span class="movie-list-item-title">My Fault</span>
+                            <div class="movie-list-item-button">
+                                <button><a href="https://www.youtube.com/embed/PaB7cGBuCP0?si=dl7HsGysnaGjTvU0">WATCH</a></button>
+                                </div>
+                           
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/FIVE FEET APART.png" alt="">
+                            <span class="movie-list-item-title">Five Feet Apart</span>
+                            <div class="movie-list-item-button">
+                                <button><a href="https://www.youtube.com/embed/24YrEAGF32M?si=9rXKK2GT2GhOD0hF">WATCH</a></button>
+                                </div>
+                            
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/EVERYTHING EVERYTHING.png" alt="">
+                            <span class="movie-list-item-title">Everything Everything</span>
+                            <div class="movie-list-item-button">
+                                <button><a href="https://www.youtube.com/embed/mAC-nh9PU5s?si=WYXlQqxep1ANSDcu">WATCH</a></button>
+                                </div>
+                           
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right arrow"></i>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

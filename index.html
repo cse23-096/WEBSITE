@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <title>Movie Website</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="navbar-container">
+            <div class="logo-container"><h1 class="logo">WARNER BROS</h1></div>
+
+            <div class="menu-container">
+                <ul class="menu-list">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="movies.html">MOVIES</a></li>
+                    <li><a href="tv shows.html">TV SHOWS</a></li>
+                    <li><a href="apps&games.html">APPS&GAMES</a></li>
+                    <li><a href="collections.html">COLLECTIONS</a></li>
+                    <li><a href="feedback.html">FEEDBACK</a></li>
+                </ul>
+            </div>
+            
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="content-container">
+
+            <div class="card">
+                <div class="cardcontent">
+                    
+                    <div class="text">
+                        <h3><a href="#" class="trailer-link">EVERYTHING EVERYTHING</a></h3>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="popup" id="videoPopup1">
+                <div class="popup-content">
+                    <span class="close" id="close">&times;</span>
+                      </div>
+                    <iframe id="youtube-trailer" width="560" height="315" src="https://www.youtube.com/embed/dVYhAcgmWWs?si=sS7BffPHF57ZVxS3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        
+            <script>
+                const trailerLink = document.querySelector('.trailer-link');
+                const popup = document.getElementById('videoPopup1');
+                const close = document.getElementById('close');
+        
+                trailerLink.addEventListener('click', () => {
+                    popup.style.display = 'block';
+                });
+        
+                close.addEventListener('click', () => {
+                    popup.style.display = 'none';
+                });
+            </script> 
+            
+            <div class="movie-list-container">
+                <h1 class="movie-list-title">LATEST MOVIES</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/FATAL SEDUCTION.png" alt="">
+                            <span class="movie-list-item-title">Fatal Seduction</span>
+                            <div class="movie-list-item-button">
+                            <button><a href="https://www.youtube.com/embed/6Dpi7CZHY84?si=cBeH37VhL9F3qw2a">WATCH</a></button>
+                            </div>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/AVATAR.png" alt="">
+                            <span class="movie-list-item-title">Avatar</span>
+                            <div class="movie-list-item-button">
+                            <button><a href="https://www.youtube.com/embed/d9MyW72ELq0?si=9bL_SC1VEgr71fFY">WATCH</a></button>
+                        </div>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/365 DAYS.png" alt="">
+                            <span class="movie-list-item-title">365 Days</span>
+                            <div class="movie-list-item-button">
+                            <button><a href="https://www.youtube.com/embed/i3NPsm5p688?si=LM5YwD6PW6irrSRV">WATCH</a></button>
+                            </div>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/PURPLE HEARTS.png" alt="">
+                            <span class="movie-list-item-title">Purple Hearts</span>
+                            <div class="movie-list-item-button">
+                            <button><a href="https://www.youtube.com/embed/WTLgg8oRSBE?si=A3mdZaMwr1moiAtc">WATCH</a></button>
+                            </div>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/SMILE.png" alt="">
+                            <span class="movie-list-item-title">Smile</span>
+                            <div class="movie-list-item-button">
+                            <button><a href="https://www.youtube.com/embed/BcDK7lkzzsU?si=XaEU-TaPnLRd2jPm">WATCH</a></button>
+                            </div>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/WOODY WOODPECKER.png" alt="">
+                            <span class="movie-list-item-title">Woody Wodpecker</span>
+                            <div class="movie-list-item-button">
+                            <button><a href="https://www.youtube.com/embed/MsnGnXYOoF8?si=uB7Jz1LXcE5VgQiI">WATCH</a></button>
+                            </div>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/ANTHRACITE.png" alt="">
+                            <span class="movie-list-item-title">Anthracite</span>
+                            <div class="movie-list-item-button">
+                            <button><a href="https://www.youtube.com/embed/590Hmwj5_TI?si=4aNNstbxYMudA3mu">WATCH</a></button>
+                            </div>
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right arrow"></i>
+                </div>
+            </div>
+            <div class="movie-list-container">
+                <h1 class="movie-list-title">NEW RELEASES</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/DISQUIET.png" alt="">
+                            <span class="movie-list-item-title">Disquiet</span>
+                            <div class="movie-list-item-button">
+                            <button><a href="https://www.youtube.com/embed/CQf2ylF5EnU?si=oqKJPUB7D_8jrdeo"></a>WATCH</button>
+                            </div>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/THE GRINCH.png" alt="">
+                            <span class="movie-list-item-title">The Grinch</span>
+                            <div class="movie-list-item-button">
+                            <button><a href="https://www.youtube.com/embed/vjnqABgxfO0?si=ol-i_ucA7dxB_hzr">WATCH</a></button>
+                            </div>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/QUEEN CHARLOTTE.png" alt="">
+                            <span class="movie-list-item-title">Queen Charlotte</span>
+                            <div class="movie-list-item-button">
+                            <button><a href="https://www.youtube.com/embed/oLtnNw0KT78?si=s96ZBHhSnawuOv47">WATCH</a></button>
+                            </div>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/BIRD BOX.png" alt="">
+                            <span class="movie-list-item-title">Bird Box</span>
+                            <div class="movie-list-item-button">
+                            <button><a href="https://www.youtube.com/embed/MPWMBITCudM?si=mV13YDdY3xJCij1V">WATCH</a></button>
+                            </div>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/SARAFINA.png" alt="">
+                            <span class="movie-list-item-title">Sarafina</span>
+                            <div class="movie-list-item-button">
+                            <button><a href="https://www.youtube.com/embed/3wVYjkFfpXM?si=30xDEahBhAhh51jw">WATCH</a></button>
+                            </div>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/ONE DAY.png" alt="">
+                            <span class="movie-list-item-title">One Day</span>
+                            <div class="movie-list-item-button">
+                            <button><a href="https://www.youtube.com/embed/WlopfWYGBh4?si=QDLUTSVL3WGtTEfU">WATCH</a></button>
+                            </div>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/CRAWL.png" alt="">
+                            <span class="movie-list-item-title">Crawl</span>
+                            <div class="movie-list-item-button">
+                            <button><a href="https://www.youtube.com/embed/H6MLJG0RdDE?si=t4klYeS512JmDe-F">WATCH</a></button>
+                            </div>
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right arrow"></i>
+                </div>
+            </div>
+            
+            <div class="movie-list-container">
+                <h1 class="movie-list-title">MOST WATCHED</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/SING.png" alt="">
+                            <span class="movie-list-item-title">Sing</span>
+                            <div class="movie-list-item-button">
+                            <button><a href="https://www.youtube.com/embed/kmb14Bzeeps?si=3xAJU1fAunD95WQL">WATCH</a></button>
+                            </div>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/IN THE TALL GRASS.png" alt="">
+                            <span class="movie-list-item-title">In The Tall Grass</span>
+                            <div class="movie-list-item-button">
+                            <button><a href="https://www.youtube.com/embed/7afc9gTbVFI?si=WwhNdUPsikRUvRB1">WATCH</a></button>
+                            </div>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/EX-MACHINA.png" alt="">
+                            <span class="movie-list-item-title">EX-Machina</span>
+                            <div class="movie-list-item-button">
+                            <button><a href="https://www.youtube.com/embed/sNExF5WYMaA?si=mPnAUqJ1k3cD8gW6">WATCH</a></button>
+                            </div>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/20TH CENTURY GIRL.png" alt="">
+                            <span class="movie-list-item-title">20th Century Girl</span>
+                            <div class="movie-list-item-button">
+                            <button><a href="https://www.youtube.com/embed/KFS4_qevE7M?si=d8p-ZeBIdGPwP-N8">WATCH</a></button>
+                            </div>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/BUSINESS PROPOSAL.png" alt="">
+                            <span class="movie-list-item-title">Business Proposal</span>
+                            <div class="movie-list-item-button">
+                            <button><a href="https://www.youtube.com/embed/mh4R-WXRhQo?si=vnC8iYebtBmCB-Cn">WATCH</a></button>
+                            </div>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/CLICKBAIT.png" alt="">
+                            <span class="movie-list-item-title">Clickbait</span>
+                            <div class="movie-list-item-button">
+                            <button><a href="https://www.youtube.com/embed/JZJo0BFZDQ8?si=v8xTx-Ctrdx9D-O8">WATCH</a></button>
+                            </div>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/ANNABELLE COMES HOME.png" alt="">
+                            <span class="movie-list-item-title">Annabelle</span>
+                            <div class="movie-list-item-button">
+                            <button><a href="https://www.youtube.com/embed/paFgQNPGlsg?si=JR6cEs7MR1godBuc">WATCH</a></button>
+                            </div>
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right arrow"></i>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <script src="app.js"></script>
+
+    <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h5>Follow Us</h5>
+              <ul>
+                <li><a href="https://www.facebook.com/WarnerBros/" target="_blank"><i class="fa fa-facebook"></i> Facebook</a></li>
+                <li><a href="https://www.instagram.com/warnerbros/" target="_blank"><i class="fa fa-instagram"></i> Instagram</a></li>
+                <li><a href="https://www.youtube.com/user/WarnerBrosPictures" target="_blank"><i class="fa fa-youtube"></i> YouTube</a></li>
+              </ul>
+            </div>
+          </div>
+          <p class="copyright">Copyright &copy; 2024 Warner Bros. All rights reserved.</p>
+        </div>
+      </footer>
+
+</body>
+
+</html>
